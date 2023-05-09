@@ -1,0 +1,203 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2576
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 st122314@c62b2f4dc41a:~/Lab10$ /bin/python3 /home/st122314/Lab10/greedy-chatbot.py\
+Start preparing training data ...\
+Reading lines...\
+Read 221282 sentence pairs\
+Trimmed to 64271 sentence pairs\
+Counting words...\
+Counted words: 18008\
+\
+pairs:\
+['there .', 'where ?']\
+['you have my word . as a gentleman', 'you re sweet .']\
+['hi .', 'looks like things worked out tonight huh ?']\
+['you know chastity ?', 'i believe we share an art instructor']\
+['have fun tonight ?', 'tons']\
+['well no . . .', 'then that s all you had to say .']\
+['then that s all you had to say .', 'but']\
+['but', 'you always been this selfish ?']\
+['do you listen to this crap ?', 'what crap ?']\
+['what good stuff ?', 'the real you .']\
+keep_words 7823 / 18005 = 0.4345\
+Trimmed from 64271 pairs to 53165, 0.8272 of total\
+[['there .', 'where ?'], ['you have my word . as a gentleman', 'you re sweet .'], ['hi .', 'looks like things worked out tonight huh ?'], ['have fun tonight ?', 'tons'], ['well no . . .', 'then that s all you had to say .']]\
+[['you have my word . as a gentleman', 'you re sweet .'], ['well no . . .', 'then that s all you had to say .'], ['have fun tonight ?', 'tons'], ['there .', 'where ?'], ['hi .', 'looks like things worked out tonight huh ?']]\
+tensor([[  54,   25,   25,  124,  290],\
+        [1655,  200, 1140,    9,  380],\
+        [   4,   53,   40,  125,    4],\
+        [   2,  360,  125,  242,   76],\
+        [   0,  180,   25,  188,   37],\
+        [   0,    4,  132,  170,  945],\
+        [   0,    2,  920,   66,    4],\
+        [   0,    0, 3117,    2,    2],\
+        [   0,    0,    4,    0,    0],\
+        [   0,    0,    2,    0,    0]])\
+tensor([[ True,  True,  True,  True,  True],\
+        [ True,  True,  True,  True,  True],\
+        [ True,  True,  True,  True,  True],\
+        [ True,  True,  True,  True,  True],\
+        [False,  True,  True,  True,  True],\
+        [False,  True,  True,  True,  True],\
+        [False,  True,  True,  True,  True],\
+        [False, False,  True,  True,  True],\
+        [False, False,  True, False, False],\
+        [False, False,  True, False, False]])\
+10\
+Starting Training!\
+Initializing ...\
+Training...\
+Iteration: 100; Percent complete: 0.8%; Average loss: 5.3060\
+Iteration: 200; Percent complete: 1.7%; Average loss: 4.6995\
+Iteration: 300; Percent complete: 2.5%; Average loss: 4.4700\
+Iteration: 400; Percent complete: 3.3%; Average loss: 4.3123\
+Iteration: 500; Percent complete: 4.2%; Average loss: 4.1686\
+Iteration: 600; Percent complete: 5.0%; Average loss: 4.0704\
+Iteration: 700; Percent complete: 5.8%; Average loss: 3.9952\
+Iteration: 800; Percent complete: 6.7%; Average loss: 3.9128\
+Iteration: 900; Percent complete: 7.5%; Average loss: 3.8448\
+Iteration: 1000; Percent complete: 8.3%; Average loss: 3.7770\
+Iteration: 1100; Percent complete: 9.2%; Average loss: 3.7236\
+Iteration: 1200; Percent complete: 10.0%; Average loss: 3.6551\
+Iteration: 1300; Percent complete: 10.8%; Average loss: 3.6092\
+Iteration: 1400; Percent complete: 11.7%; Average loss: 3.5425\
+Iteration: 1500; Percent complete: 12.5%; Average loss: 3.5004\
+Iteration: 1600; Percent complete: 13.3%; Average loss: 3.4536\
+Iteration: 1700; Percent complete: 14.2%; Average loss: 3.4007\
+Iteration: 1800; Percent complete: 15.0%; Average loss: 3.3559\
+Iteration: 1900; Percent complete: 15.8%; Average loss: 3.3233\
+Iteration: 2000; Percent complete: 16.7%; Average loss: 3.2634\
+content/cb_model/Chat/2-4_512\
+Iteration: 2100; Percent complete: 17.5%; Average loss: 3.2232\
+Iteration: 2200; Percent complete: 18.3%; Average loss: 3.1959\
+Iteration: 2300; Percent complete: 19.2%; Average loss: 3.1307\
+Iteration: 2400; Percent complete: 20.0%; Average loss: 3.0985\
+Iteration: 2500; Percent complete: 20.8%; Average loss: 3.0538\
+Iteration: 2600; Percent complete: 21.7%; Average loss: 3.0083\
+Iteration: 2700; Percent complete: 22.5%; Average loss: 2.9551\
+Iteration: 2800; Percent complete: 23.3%; Average loss: 2.9424\
+Iteration: 2900; Percent complete: 24.2%; Average loss: 2.8887\
+Iteration: 3000; Percent complete: 25.0%; Average loss: 2.8404\
+Iteration: 3100; Percent complete: 25.8%; Average loss: 2.8148\
+Iteration: 3200; Percent complete: 26.7%; Average loss: 2.7623\
+Iteration: 3300; Percent complete: 27.5%; Average loss: 2.7137\
+Iteration: 3400; Percent complete: 28.3%; Average loss: 2.6826\
+Iteration: 3500; Percent complete: 29.2%; Average loss: 2.6348\
+Iteration: 3600; Percent complete: 30.0%; Average loss: 2.6094\
+Iteration: 3700; Percent complete: 30.8%; Average loss: 2.5551\
+Iteration: 3800; Percent complete: 31.7%; Average loss: 2.5328\
+Iteration: 3900; Percent complete: 32.5%; Average loss: 2.4776\
+Iteration: 4000; Percent complete: 33.3%; Average loss: 2.4431\
+content/cb_model/Chat/2-4_512\
+Iteration: 4100; Percent complete: 34.2%; Average loss: 2.4073\
+Iteration: 4200; Percent complete: 35.0%; Average loss: 2.3723\
+Iteration: 4300; Percent complete: 35.8%; Average loss: 2.3369\
+Iteration: 4400; Percent complete: 36.7%; Average loss: 2.2857\
+Iteration: 4500; Percent complete: 37.5%; Average loss: 2.2638\
+Iteration: 4600; Percent complete: 38.3%; Average loss: 2.2127\
+Iteration: 4700; Percent complete: 39.2%; Average loss: 2.1878\
+Iteration: 4800; Percent complete: 40.0%; Average loss: 2.1517\
+Iteration: 4900; Percent complete: 40.8%; Average loss: 2.1029\
+Iteration: 5000; Percent complete: 41.7%; Average loss: 2.0706\
+Iteration: 5100; Percent complete: 42.5%; Average loss: 2.0426\
+Iteration: 5200; Percent complete: 43.3%; Average loss: 1.9931\
+Iteration: 5300; Percent complete: 44.2%; Average loss: 1.9791\
+Iteration: 5400; Percent complete: 45.0%; Average loss: 1.9256\
+Iteration: 5500; Percent complete: 45.8%; Average loss: 1.9048\
+Iteration: 5600; Percent complete: 46.7%; Average loss: 1.8588\
+Iteration: 5700; Percent complete: 47.5%; Average loss: 1.8291\
+Iteration: 5800; Percent complete: 48.3%; Average loss: 1.7999\
+Iteration: 5900; Percent complete: 49.2%; Average loss: 1.7652\
+Iteration: 6000; Percent complete: 50.0%; Average loss: 1.7376\
+content/cb_model/Chat/2-4_512\
+Iteration: 6100; Percent complete: 50.8%; Average loss: 1.7044\
+Iteration: 6200; Percent complete: 51.7%; Average loss: 1.6738\
+Iteration: 6300; Percent complete: 52.5%; Average loss: 1.6465\
+Iteration: 6400; Percent complete: 53.3%; Average loss: 1.6107\
+Iteration: 6500; Percent complete: 54.2%; Average loss: 1.5808\
+Iteration: 6600; Percent complete: 55.0%; Average loss: 1.5432\
+Iteration: 6700; Percent complete: 55.8%; Average loss: 1.5168\
+Iteration: 6800; Percent complete: 56.7%; Average loss: 1.4900\
+Iteration: 6900; Percent complete: 57.5%; Average loss: 1.4641\
+Iteration: 7000; Percent complete: 58.3%; Average loss: 1.4292\
+Iteration: 7100; Percent complete: 59.2%; Average loss: 1.4075\
+Iteration: 7200; Percent complete: 60.0%; Average loss: 1.3770\
+Iteration: 7300; Percent complete: 60.8%; Average loss: 1.3565\
+Iteration: 7400; Percent complete: 61.7%; Average loss: 1.3333\
+Iteration: 7500; Percent complete: 62.5%; Average loss: 1.3031\
+Iteration: 7600; Percent complete: 63.3%; Average loss: 1.2788\
+Iteration: 7700; Percent complete: 64.2%; Average loss: 1.2551\
+Iteration: 7800; Percent complete: 65.0%; Average loss: 1.2299\
+Iteration: 7900; Percent complete: 65.8%; Average loss: 1.2075\
+Iteration: 8000; Percent complete: 66.7%; Average loss: 1.1816\
+content/cb_model/Chat/2-4_512\
+Iteration: 8100; Percent complete: 67.5%; Average loss: 1.1534\
+Iteration: 8200; Percent complete: 68.3%; Average loss: 1.1403\
+Iteration: 8300; Percent complete: 69.2%; Average loss: 1.1189\
+Iteration: 8400; Percent complete: 70.0%; Average loss: 1.0921\
+Iteration: 8500; Percent complete: 70.8%; Average loss: 1.0769\
+Iteration: 8600; Percent complete: 71.7%; Average loss: 1.0542\
+Iteration: 8700; Percent complete: 72.5%; Average loss: 1.0361\
+Iteration: 8800; Percent complete: 73.3%; Average loss: 1.0177\
+Iteration: 8900; Percent complete: 74.2%; Average loss: 0.9974\
+Iteration: 9000; Percent complete: 75.0%; Average loss: 0.9761\
+Iteration: 9100; Percent complete: 75.8%; Average loss: 0.9492\
+Iteration: 9200; Percent complete: 76.7%; Average loss: 0.9416\
+Iteration: 9300; Percent complete: 77.5%; Average loss: 0.9166\
+Iteration: 9400; Percent complete: 78.3%; Average loss: 0.8996\
+Iteration: 9500; Percent complete: 79.2%; Average loss: 0.8808\
+Iteration: 9600; Percent complete: 80.0%; Average loss: 0.8655\
+Iteration: 9700; Percent complete: 80.8%; Average loss: 0.8558\
+Iteration: 9800; Percent complete: 81.7%; Average loss: 0.8343\
+Iteration: 9900; Percent complete: 82.5%; Average loss: 0.8248\
+Iteration: 10000; Percent complete: 83.3%; Average loss: 0.8070\
+content/cb_model/Chat/2-4_512\
+Iteration: 10100; Percent complete: 84.2%; Average loss: 0.7996\
+Iteration: 10200; Percent complete: 85.0%; Average loss: 0.7849\
+Iteration: 10300; Percent complete: 85.8%; Average loss: 0.7646\
+Iteration: 10400; Percent complete: 86.7%; Average loss: 0.7534\
+Iteration: 10500; Percent complete: 87.5%; Average loss: 0.7359\
+Iteration: 10600; Percent complete: 88.3%; Average loss: 0.7193\
+Iteration: 10700; Percent complete: 89.2%; Average loss: 0.6993\
+Iteration: 10800; Percent complete: 90.0%; Average loss: 0.6930\
+Iteration: 10900; Percent complete: 90.8%; Average loss: 0.6822\
+Iteration: 11000; Percent complete: 91.7%; Average loss: 0.6747\
+Iteration: 11100; Percent complete: 92.5%; Average loss: 0.6678\
+Iteration: 11200; Percent complete: 93.3%; Average loss: 0.6526\
+Iteration: 11300; Percent complete: 94.2%; Average loss: 0.6381\
+Iteration: 11400; Percent complete: 95.0%; Average loss: 0.6272\
+Iteration: 11500; Percent complete: 95.8%; Average loss: 0.6203\
+Iteration: 11600; Percent complete: 96.7%; Average loss: 0.6108\
+Iteration: 11700; Percent complete: 97.5%; Average loss: 0.5931\
+Iteration: 11800; Percent complete: 98.3%; Average loss: 0.5870\
+Iteration: 11900; Percent complete: 99.2%; Average loss: 0.5797\
+Iteration: 12000; Percent complete: 100.0%; Average loss: 0.5726\
+content/cb_model/Chat/2-4_512\
+0 0.141080287481769 0.04887164517296948\
+1000 0.14636273855370768 0.05369469026668399\
+2000 0.14459147083794235 0.05515170412998706\
+3000 0.14469663503300492 0.054557500573799676\
+4000 0.1481420628454823 0.055882947532570594\
+5000 0.1464385377903077 0.05527206952174228\
+6000 0.144915610840369 0.054479847706515996\
+7000 0.15316237002079322 0.06355854896913507\
+8000 0.15251515144401484 0.06301620760084482\
+Total Bleu Score for 1 grams on testing pairs:  0.15179748338026577\
+Total Bleu Score for 2 grams on testing pairs:  0.062497703310824354\
+> \
+Total Bleu Score for 1 grams on testing pairs:  0.15179748338026577\
+Total Bleu Score for 2 grams on testing pairs:  0.062497703310824354\
+> Hello?\
+Bot: hello . s welles . .\
+> Nice to meet you in this terminal.\
+Bot: you ll go now . .\
+> How are you?\
+Bot: all right son . let s go !\
+> okay.. Thank you\
+Bot: i ll get the dress . out .\
+> }
